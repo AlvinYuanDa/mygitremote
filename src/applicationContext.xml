@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 该文件中产生的所有对象被
+	spring 放入了一个被称为spring ioc 容器的地方 -->
+	<bean id="student" class="org.cyd.entity.Student">
+		<property name="stuName" value="lisi"></property>
+		<property name="stuId" value="2"></property>
+		<property name="stuAge" value="19"></property>
+	</bean>
+
+	<bean id="java" class="org.cyd.course.Java">
+	</bean>
+	
+	<bean id="html" class="org.cyd.course.Html">
+	</bean>
+</beans>
